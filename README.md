@@ -1,2 +1,21 @@
-# novapulse-agency-website
-A modern, responsive digital agency landing page built using **HTML, CSS, and JavaScript.
+# NovaPulse Agency Website
+
+A modern, responsive digital agency landing page built using HTML, CSS, and JavaScript.
+
+## Features
+- Dark modern UI
+- Responsive layout
+- Service sections
+- Portfolio showcase
+- Scroll-to-top interaction
+
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## Live Preview
+(You can add GitHub Pages link here later)
+
+## Author
+Gayatri
