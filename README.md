@@ -13,9 +13,6 @@ A modern, responsive digital agency landing page built using HTML, CSS, and Java
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-
-## Live Preview
-(You can add GitHub Pages link here later)
-
+- 
 ## Author
 Gayatri
