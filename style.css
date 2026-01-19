@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-main: #0f0f1a;
+  --bg-card: #161625;
+  --primary: #7c7cff;
+  --secondary: #a855f7;
+  --text-main: #eaeaf0;
+  --text-muted: #9ca3af;
+  --padding-inline-section: 20px;
+}
+
+/* base */
+body {
+  font-family: "Jost", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* utilities */
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 100px var(--padding-inline-section);
+}
+
+/* navbar */
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.company-logo span {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.nav-links ul {
+  gap: 40px;
+}
+
+.hover-link {
+  color: var(--text-main);
+}
+
+.hover-link:hover {
+  color: var(--primary);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* buttons */
+.primary-button {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff !important;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(124,124,255,0.3);
+}
+
+.secondary-button {
+  border: 1px solid var(--primary);
+  color: var(--primary) !important;
+  padding: 12px 26px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: var(--primary);
+  color: #fff !important;
+}
+
+/* header */
+header {
+  padding: 80px var(--padding-inline-section);
+}
+
+.header-section {
+  gap: 60px;
+}
+
+.header-left {
+  max-width: 45%;
+}
+
+.header-right img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* services */
+.features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.features-header h3 {
+  color: var(--text-muted);
+}
+
+.big-feature-section {
+  padding: 80px var(--padding-inline-section);
+}
+
+.big-feature-container {
+  gap: 60px;
+}
+
+.feature-img img {
+  width: 85%;
+  border-radius: 18px;
+}
+
+.feature-text {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-text h4 {
+  color: var(--primary);
+}
+
+/* portfolio */
+.examples-section {
+  padding: 100px var(--padding-inline-section);
+}
+
+.examples-header {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.examples-area {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.examples-card {
+  width: 23%;
+  height: 300px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  background-size: cover;
+}
+
+.examples-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.cta-section p {
+  color: #f1f1f1;
+}
+
+/* footer */
+footer {
+  background-color: #0b0b14;
+  padding: 80px 20px;
+}
+
+.link-column {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-container {
+  justify-content: space-between;
+}
+
+.subfooter {
+  background-color: #080810;
+  padding: 20px;
+}
+
+.subfooter-container {
+  justify-content: center;
+  gap: 30px;
+}
+
+/* scroll up */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.show-scroll {
+  bottom: 5rem;
+}
